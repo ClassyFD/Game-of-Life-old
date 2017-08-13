@@ -1,0 +1,140 @@
+.block {
+    width: 10px;
+    height: 10px;
+    border: 1px darkslategray solid;
+}
+.container {
+    display: flex;
+    margin: 0 auto;       
+}
+.blocks_container {
+    border: ridge darkgray 5px;
+    box-shadow: 0 0 10px 1px black;
+}
+.dead {
+    background: black;
+}
+.alive {
+    background: yellow;
+}
+.main_container {
+    margin: 0 auto;
+    background: darkgray;
+    border: 8px inset gray;
+    box-shadow: -2px -2px 10px 2px black;
+    max-height: 650px;
+}
+.button_container {
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 260px;
+    flex-wrap: wrap;
+}
+.saving_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.loading_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 15px;
+    align-items: center;
+}
+.footer {
+    display: flex;
+    max-height: 100px;
+}
+.button {
+    background: lightseagreen;
+    border: outset 3px seagreen;
+    width: 60px;
+    height: 30px;
+    box-shadow: 0px 0px 10px 3px darkslategray;
+    outline: none;
+}
+.button:active {
+    border: inset 2px seagreen;
+}
+.button:hover {
+    cursor: pointer;
+}
+.save_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+    height: 100px;
+}
+.text_field {
+    width: 100px;
+    height: 20px;
+    border: 1px black solid;
+}
+savediv {
+    background: white;
+    border: 1px black solid; 
+    border-top: none;
+    min-width: 130px;
+    min-height: 25px;
+    cursor: pointer;
+    display: none;
+    position: relative;
+    line-height: 25px;
+    justify-content: space-between;
+}
+savediv:hover {
+    background: lightslategray;
+}
+list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    min-height: 120px;
+    flex-wrap: wrap;
+}
+.drop_down {
+    animation-name: 'dropdown';
+    animation-duration: 1s;
+}
+.drop_up {
+    animation-name: 'dropup';
+    animation-duration: 1s;
+}
+.load_section {
+    background: lightgreen;
+    border: ridge 3px lightgreen;
+    box-shadow: 0px 0px 10px 1px darkslategray;
+    width: 100px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+}
+.load_section:hover {
+    background: lightseagreen;
+    border: ridge 3px lightseagreen;
+}
+@keyframes dropdown{
+    0%{
+        top:-20px;
+        opacity: 0;
+        transform:rotateX(360deg);
+    }
+    10%{
+        top: -15px;
+        opacity: .3;
+    }
+    30%{
+        top: -10px;
+        opacity: .6;
+    }
+    40%{
+        top: 0px;
+    }
+}
